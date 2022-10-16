@@ -1,0 +1,165 @@
+*{
+    
+    margin: 0;
+    padding:0;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    height: 100%;
+    overflow-x: hidden;
+
+}
+.navi{
+    margin: 0px;
+    height: 80px;
+
+    background-color:#23b31e;
+    
+}
+nav{
+    display: flex;
+}
+nav a{
+    display: inline-flex;
+    padding: 0px 20px;
+
+}
+
+.links{
+
+   position: relative;
+    border: none;
+    flex:1;
+    text-align: right;
+}
+#img{
+    padding: 0px 0 0 0 ;
+    width:60px;
+    height: 80px;
+    
+
+}
+.links ul li{
+    list-style: none;
+    padding: 30px 10px 0px 0px ;
+    
+    text-align: center;
+    display: inline-block;
+    font-weight: bolder;
+
+    
+}
+.links a{
+    color: rgb(250, 248, 248);
+    text-decoration: none;
+    font-size: 17px;
+}
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background: rgb(76, 29, 217);
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+    bottom: -2px;
+}
+.links ul li:hover::after{
+    width: 70%;
+}
+.text-box{
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 5%;
+}
+.text-box h1{
+    font-size: 70px;
+    border: 3px solid rgb(23, 210, 36);
+    position: relative;
+    padding: 13px;
+    transition: 1s;
+}
+.text-box p{
+    font-size: 20px;
+    padding: 20px 0 0 0 ;
+    font-weight: 500;
+}
+.courses{
+    height: 100%;
+    width: 100%;
+}
+.courses h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 3px rgb(23, 210, 36);
+}
+.row{
+    display: inline-flex;
+    margin-top: 10%;
+    justify-content: space-between;
+    max-width: 1000%;
+    max-height: 75%;
+    overflow-x: scroll;
+    
+    
+}
+.row::-webkit-scrollbar{
+    width: 0px;
+}
+.row h2{
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 15px;
+    text-align: center;
+    color: red;
+    position: relative;
+
+}
+.cc{
+    flex-basis: 33%;
+    background: #1796e0;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 1%;
+    padding: 2px 50px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    
+}
+.cc:hover{
+    box-shadow: 14px 15px  #f6180c;
+    transition: 1s;
+}
+.about{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.about h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    text-shadow: 2px 1px black;
+}
+.about p{
+    padding: 50px 10px;
+}
+.copyright{
+    text-align: right;
+    font-weight: 1000;
+}
+@media(max-width:900px){
+    .header{
+        font-size: 10px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .cc{
+        margin-bottom: 10%;
+    }
+}
